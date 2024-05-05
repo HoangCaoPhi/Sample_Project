@@ -1,0 +1,39 @@
+﻿# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@controllerName=sample
+
+POST {{HostAddress}}/{{controllerName}}
+Content-Type: application/json
+
+{
+    "GroupName": "Gia đình",
+    "Description": "Bao gồm từ vựng chủ đề gia đình",
+    "GroupTypeEnum": 1
+}
+
+###
+PUT {{HostAddress}}/{{controllerName}}
+Content-Type: application/json
+
+{
+    "GroupName": "Trái cây update",
+    "Description": "Bao gồm từ vựng chủ đề trái cây",
+    "GroupTypeEnum": 1,
+    "GroupId": 1
+}
+
+###
+GET {{HostAddress}}/{{controllerName}}/1
+Content-Type: application/json
+
+###
+GET {{HostAddress}}/{{controllerName}}/all
+Content-Type: application/json
+
+###
+GET {{HostAddress}}/{{controllerName}}/paging?pageIndex=1&pageSize=2
+Content-Type: application/json
+
+###
+DELETE {{HostAddress}}/{{controllerName}}/1
+Content-Type: application/json

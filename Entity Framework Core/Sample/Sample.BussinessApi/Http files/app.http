@@ -1,0 +1,25 @@
+﻿# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET https://localhost:7229/sample/all
+
+###
+
+GET https://localhost:7229/sample?pageIndex=1&pageSize=10&searchKey=test
+
+###
+#ghi chú //ghi chú
+POST https://localhost:7229/sample
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDI0LTA0MDE1IiwianRpIjoiNjg1NjcxNjUtNzgwNy00Y2YwLWIxMWYtNzEzM2FiZDdhNWE1IiwiZW1haWwiOiJob2FuZ2Nhb3BoaUB2aWV0YmFuay5jb20udm4iLCJ1aWQiOiJkY2QxMDZiMC02NjdlLTQ0ODgtYmU4NS0wNDI5ODQ4OWI0MGEiLCJpcCI6IjEwLjU2LjY2Ljc0IiwiZXhwIjoxNzEzMjY3NTA1LCJpc3MiOiJDb3JlSWRlbnRpdHkiLCJhdWQiOiJDb3JlSWRlbnRpdHlVc2VyIn0.5jkTg5PhvY1gOCI8HgltttxL_h60yoq4Grtswh1wX7c
+
+{
+    "GroupName": "Gia đình",
+    "Description": "Bao gồm từ vựng chủ đề gia đình",
+    "GroupTypeEnum": 1
+}
+###
+
+
+@hostname=localhost
+@port=44320
+@host={{hostname}}:{{port}}
+GET https://{{host}}/api/search/tool

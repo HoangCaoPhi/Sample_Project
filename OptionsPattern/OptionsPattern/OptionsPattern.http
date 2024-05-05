@@ -1,0 +1,29 @@
+@OptionsPattern_HostAddress = https://localhost:7256/api
+
+GET {{OptionsPattern_HostAddress}}/config/
+Accept: application/json
+
+###
+
+GET {{OptionsPattern_HostAddress}}/config/options/bind
+Accept: application/json
+
+###
+
+GET {{OptionsPattern_HostAddress}}/config/options/get
+Accept: application/json
+
+###
+
+GET {{OptionsPattern_HostAddress}}/options/
+Accept: application/json
+
+###
+
+GET {{OptionsPattern_HostAddress}}/options/all
+Accept: application/json
+
+###
+
+GET {{OptionsPattern_HostAddress}}/options/all-delay
+Accept: application/json

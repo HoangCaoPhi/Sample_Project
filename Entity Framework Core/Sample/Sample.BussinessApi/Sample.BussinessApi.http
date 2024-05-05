@@ -1,0 +1,10 @@
+﻿@Sample.BussinessApi_HostAddress = https://localhost:7229
+
+POST {{Sample.BussinessApi_HostAddress}}/api/sample
+Content-Type: application/json
+
+{
+  //SaveGroupRequest
+}
+
+###
