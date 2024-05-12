@@ -1,4 +1,2 @@
 ﻿namespace MediatorPattern;
-public interface IRequest<out TResponse>
-{
-}
+public interface IRequest<out TResponse>;
